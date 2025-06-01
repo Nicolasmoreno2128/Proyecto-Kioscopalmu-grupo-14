@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1748576313 source:c:\users\nico\downloads\kioscopalmu\kioscopalmu\main.cpp
+	<iostream>
+	"Fecha.h"
+	"FuncionesGlobales.h"
+	"proveedor.h"
+
+1747701822 c:\users\nico\downloads\kioscopalmu\kioscopalmu\fecha.h
+
+1747701822 c:\users\nico\downloads\kioscopalmu\kioscopalmu\funcionesglobales.h
+
+1748576224 c:\users\nico\downloads\kioscopalmu\kioscopalmu\proveedor.h
+	<string>
+
+1748576019 source:c:\users\nico\downloads\kioscopalmu\kioscopalmu\proveedor.cpp
+	<iostream>
+	<cstdlib>
+	"proveedor.h"
+
