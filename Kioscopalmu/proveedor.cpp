@@ -1,91 +1,98 @@
 #include <iostream>
 #include <cstdlib>
-#include "proveedor.h"
+#include <cstring>
+#include "Proveedor.h"
+#include "FuncionesGlobales.h"
 
-proveedor :: proveedor()
-{
+using namespace std;
 
-    Dni=0;
-    Cuit=0;
-    telefono=0;
-    nombre="";
-    email="";
-    direccion="";
-
+// Constructor por defecto
+proveedor::proveedor() {
+    Dni = 0;
+    Cuit = 0;
+    telefono = 0;
+    strcpy(nombre, "");
+    strcpy(email, "");
+    strcpy(direccion, "");
 }
 
-proveedor :: proveedor(int _Dni, int _Cuit, int _telefono, string _nombre, string _email, string _direccion)
-{
-
-    Dni=_Dni;
-    Cuit=_Cuit;
-    telefono=_telefono;
-    nombre=_nombre;
-    email=_email;
-    direccion=_direccion;
-
+// Constructor con parámetros
+proveedor::proveedor(int _Dni, int _Cuit, int _telefono, const char* _nombre, const char* _email, const char* _direccion) {
+    Dni = _Dni;
+    Cuit = _Cuit;
+    telefono = _telefono;
+    strcpy(nombre, _nombre);
+    strcpy(email, _email);
+    strcpy(direccion, _direccion);
 }
 
-int proveedor :: getDni()
-{
+// Métodos getter
+int proveedor::getDni() {
     return Dni;
 }
 
-int proveedor :: getCuit()
-{
+int proveedor::getCuit() {
     return Cuit;
 }
 
-int proveedor :: gettelefono()
-{
+int proveedor::gettelefono() {
     return telefono;
 }
 
-string proveedor::getnombre()
-{
+char* proveedor::getnombre() {
     return nombre;
 }
-string proveedor::getemail()
-{
+
+char* proveedor::getemail() {
     return email;
 }
 
-string proveedor::getdireccion()
-{
+char* proveedor::getdireccion() {
     return direccion;
 }
 
-
-void  proveedor::setDni(int _Dni)
-{
-    Dni= _Dni;
+// Métodos setter
+void proveedor::setDni(int _dni) {
+    Dni = _dni;
 }
 
-void  proveedor::setCuit(int _Cuit)
-{
-    Cuit= _Cuit;
+void proveedor::setCuit(int _Cuit) {
+    Cuit = _Cuit;
 }
 
-void  proveedor::settelefono(int _telefono)
-{
-    telefono= _telefono;
+void proveedor::settelefono(int _telefono) {
+    telefono = _telefono;
 }
 
-void proveedor::setnombre(string _nombre)
-{
-    nombre=_nombre;
-}
-void proveedor::setemail  (string _email)
-{
-    email=_email;
-}
-void proveedor::setdireccion(string _direccion)
-{
-    direccion=_direccion;
+void proveedor::setnombre(const char* _nombre) {
+    strcpy(nombre, _nombre);
 }
 
+void proveedor::setemail(const char* _email) {
+    strcpy(email, _email);
+}
 
-/*
+void proveedor::setdireccion(const char* _direccion) {
+    strcpy(direccion, _direccion);
+}
+
+// Método para cargar datos
+void proveedor::cargar() {
+    cout << "DNI: ";
+    cin >> Dni;
+    cout << "CUIT: ";
+    cin >> Cuit;
+    cout << "TELEFONO: ";
+    cin >> telefono;
+    cout << "NOMBRE: ";
+    cargarCadena(nombre, 49);
+    cout << "EMAIL: ";
+    cargarCadena(email, 49);
+    cout << "DIRECCION: ";
+    cargarCadena(direccion, 99);
+}
+
+// Método para mostrar datos
 void proveedor::mostrar() {
     cout << "DNI: " << Dni << endl;
     cout << "CUIT: " << Cuit << endl;
@@ -94,5 +101,3 @@ void proveedor::mostrar() {
     cout << "Email: " << email << endl;
     cout << "Direccion: " << direccion << endl;
 }
-*/
-

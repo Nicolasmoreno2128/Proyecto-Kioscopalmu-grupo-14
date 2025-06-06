@@ -1,5 +1,6 @@
 #ifndef FUNCIONESGLOBALES_H_INCLUDED
 #define FUNCIONESGLOBALES_H_INCLUDED
+#include <cstring>
 
 void cargarCadena(char *pal, int tam){
     int i;
@@ -12,6 +13,5 @@ void cargarCadena(char *pal, int tam){
     pal[i]='\0';
     fflush(stdin);
 }
-
 
 #endif // FUNCIONESGLOBALES_H_INCLUDED

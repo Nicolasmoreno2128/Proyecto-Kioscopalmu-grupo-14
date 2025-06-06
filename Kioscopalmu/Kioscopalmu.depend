@@ -1,19 +1,53 @@
 # depslib dependency file v1.0
-1748576313 source:c:\users\nico\downloads\kioscopalmu\kioscopalmu\main.cpp
+1749246052 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\main.cpp
 	<iostream>
-	"Fecha.h"
+	<cstring>
+	"TipoProducto.h"
+	"TipoProducto.cpp"
 	"FuncionesGlobales.h"
+	"Fecha.h"
 	"proveedor.h"
+	"Productos.h"
+	"Productos.cpp"
+	"Compras.h"
+	"Compras.cpp"
 
-1747701822 c:\users\nico\downloads\kioscopalmu\kioscopalmu\fecha.h
+1749246860 c:\users\tpalm\desktop\programacion 2\kioscopalmu\fecha.h
 
-1747701822 c:\users\nico\downloads\kioscopalmu\kioscopalmu\funcionesglobales.h
+1749004094 c:\users\tpalm\desktop\programacion 2\kioscopalmu\funcionesglobales.h
+	<cstring>
 
-1748576224 c:\users\nico\downloads\kioscopalmu\kioscopalmu\proveedor.h
+1749247240 c:\users\tpalm\desktop\programacion 2\kioscopalmu\proveedor.h
 	<string>
 
-1748576019 source:c:\users\nico\downloads\kioscopalmu\kioscopalmu\proveedor.cpp
+1749245446 c:\users\tpalm\desktop\programacion 2\kioscopalmu\productos.h
+	<cstring>
+
+1749245845 c:\users\tpalm\desktop\programacion 2\kioscopalmu\tipoproducto.h
+	<cstring>
+
+1749002083 c:\users\tpalm\desktop\programacion 2\kioscopalmu\compras.h
+	<string>
+	"Fecha.h"
+
+1749245993 c:\users\tpalm\desktop\programacion 2\kioscopalmu\tipoproducto.cpp
 	<iostream>
 	<cstdlib>
-	"proveedor.h"
+	<cstring>
+	"TipoProducto.h"
+	"FuncionesGlobales.h"
+
+1749246086 c:\users\tpalm\desktop\programacion 2\kioscopalmu\productos.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	"Productos.h"
+	"FuncionesGlobales.h"
+
+1749246642 c:\users\tpalm\desktop\programacion 2\kioscopalmu\compras.cpp
+	<iostream>
+	<cstdlib>
+	"Compras.h"
+	"FuncionesGlobales.h"
+	"Fecha.h"
 

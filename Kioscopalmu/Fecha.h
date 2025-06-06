@@ -12,6 +12,9 @@ public:
     mes = m;
     anio = a;
 }
+    //CONSTRUCTOR SIN PARAMETROS
+    Fecha() : dia(1), mes(1), anio(2025) {}
+
     void Cargar(){
         cout<<"DIA ";cin>>dia;
         cout<<"MES ";cin>>mes;
