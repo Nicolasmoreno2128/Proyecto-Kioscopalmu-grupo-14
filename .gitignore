@@ -1,0 +1,25 @@
+# Ignorar archivos de compilación y ejecutables
+*.o
+*.exe
+
+# Ignorar carpetas generadas por Code::Blocks
+/bin/
+/obj/
+
+# Ignorar archivos de respaldo y temporales
+*~
+*.bak
+*.tmp
+
+# Ignorar configuraciones locales de editor
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
