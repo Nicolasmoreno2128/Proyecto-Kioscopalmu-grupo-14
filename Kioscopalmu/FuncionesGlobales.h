@@ -2,6 +2,10 @@
 #define FUNCIONESGLOBALES_H_INCLUDED
 #include <cstring>
 
+
+
+void cargarCadena(char *palabra, int tam);
+/*
 void cargarCadena(char *pal, int tam){
     int i;
     fflush(stdin);
@@ -13,5 +17,5 @@ void cargarCadena(char *pal, int tam){
     pal[i]='\0';
     fflush(stdin);
 }
-
+*/
 #endif // FUNCIONESGLOBALES_H_INCLUDED
