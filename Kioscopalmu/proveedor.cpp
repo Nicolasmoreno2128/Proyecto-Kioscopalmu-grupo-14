@@ -39,15 +39,15 @@ int proveedor::gettelefono() {
     return telefono;
 }
 
-char* proveedor::getnombre() {
+const char* proveedor::getnombre() {
     return nombre;
 }
 
-char* proveedor::getemail() {
+const char* proveedor::getemail() {
     return email;
 }
 
-char* proveedor::getdireccion() {
+const char* proveedor::getdireccion() {
     return direccion;
 }
 
