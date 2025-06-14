@@ -14,7 +14,8 @@ class proveedor {
 
         proveedor();
         proveedor (int _Dni,int _Cuit,int _telefono,const char* _nombre,const char*_email,const char*_direccion);
-        //void mostrar();
+        void mostrar();
+        void cargar();
 
         int getDni();
         int getCuit();
@@ -25,12 +26,12 @@ class proveedor {
 
 
 
-        int setDni(int _dni);
-        int setCuit(int _Cuit);
-        int settelefono(int _telefono);
-        const char* setnombre(const char* _nombre);
-        const char* setemail(const char* _mail);
-        const char* setdireccion(const char* _direccion);
+        void setDni(int _dni);
+        void setCuit(int _Cuit);
+        void settelefono(int _telefono);
+        void setnombre(const char* _nombre);
+        void setemail(const char* _mail);
+        void setdireccion(const char* _direccion);
 
 };
 
