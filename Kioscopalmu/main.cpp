@@ -19,6 +19,7 @@ using namespace std;
 #include "FuncionesGlobales.h"
 #include "Fecha.h"
 #include "proveedor.h"
+//#include "proveedor.cpp"
 #include "Productos.h"
 #include "Productos.cpp"
 #include "Compras.h"
