@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
-#include "Compras.h"
 #include "FuncionesGlobales.h"
+#include "Compras.h"
 
 using namespace std;
 #include "Fecha.h"

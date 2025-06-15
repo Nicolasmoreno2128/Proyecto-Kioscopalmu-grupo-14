@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
-#include "Proveedor.h"
-#include "FuncionesGlobales.h"
-
 using namespace std;
+#include "FuncionesGlobales.h"
+#include "proveedor.h"
+
 
 // Constructor por defecto
 proveedor::proveedor() {

@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
-#include "TipoProducto.h"
-#include "FuncionesGlobales.h"
 
 using namespace std;
+#include "FuncionesGlobales.h"
+#include "TipoProducto.h"
 
 // Constructor por defecto
 TipoProducto::TipoProducto() {
