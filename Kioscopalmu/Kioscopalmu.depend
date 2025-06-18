@@ -51,7 +51,7 @@
 	"FuncionesGlobales.h"
 	"Fecha.h"
 
-1750043692 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\main.cpp
+1750214894 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\main.cpp
 	<iostream>
 	<cstring>
 	"FuncionesGlobales.h"
@@ -155,4 +155,12 @@
 	<cstring>
 	"FuncionesGlobales.h"
 	"proveedor.h"
+
+1750214686 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoTipoProducto.h"
+	"TipoProducto.h"
+
+1750214234 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
 

@@ -9,6 +9,7 @@ using namespace std;
 #include "proveedor.h"
 #include "Productos.h"
 #include "Compras.h"
+//#include "menu.h"
 
 // Incluir las clases archivo
 #include "ArchivoTipoProducto.h"
@@ -25,6 +26,9 @@ void mostrarMenuPrincipal();
 
 int main()
 {
+    //mostrarMenuPrincipal(); // Prueba menu .cpp y .h
+
+
     cout << "=== SISTEMA DE GESTION KIOSCOPALMU ===" << endl;
     cout << "=== PRUEBA DE CLASES ARCHIVO ===" << endl << endl;
 
@@ -65,6 +69,7 @@ int main()
     return 0;
 }
 
+
 void mostrarMenuPrincipal() {
     cout << "\n=== MENU PRINCIPAL ===" << endl;
     cout << "1. Probar TipoProducto" << endl;
@@ -74,6 +79,7 @@ void mostrarMenuPrincipal() {
     cout << "0. Salir" << endl;
     cout << "========================" << endl;
 }
+
 
 void testTipoProducto() {
     cout << "\n=== PRUEBA TIPO PRODUCTO ===" << endl;
@@ -385,4 +391,5 @@ void testCompras() {
             }
         }
     } while(opcion != 0);
+
 }
