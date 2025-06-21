@@ -2,13 +2,14 @@
 #include "Menu.h"
 #include "ArchivoTipoProducto.h"
 #include "TipoProducto.h"
-
+#include "Productos.h"
+#include "ArchivoProductos.h"
 using namespace std;
 
 
 /// MENU FUNCIONAL PARA EL TIPOO DE PRODUCTO
 // FALTA REALIZAR EL TRASPASO DE LAS DEMAS CLASES AL MENU
-/*
+
 void mostrarMenuPrincipal() {
     int opcion;
     do {
@@ -88,9 +89,68 @@ void listarTipoProductos() {
 }
 
 // Las siguientes funciones ya estaban declaradas antes:
-void menuProductos() {}
-void altaProducto() {}
-void listarProductos() {}
+
+
+void menuProductos() {
+cout << "\n=== PRUEBA PRODUCTOS ===" << endl;
+int opcion;
+    do {
+        cout << "\n--- MENU DE PRODUCTO ---" << endl;
+        cout << "1. Agregar Producto" << endl;
+        cout << "2. Listar todos los productos" << endl;
+        cout << "3. Buscar por numero" << endl;
+        cout << "4. Cantidad de productos" << endl;
+        cout << "0. Volver" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+            case 1: altaProducto(); break;
+            case 2: listarProductos(); break;
+            //case 3: buscarProductos(); break;
+            //case 2: cantidadProductos(); break;
+            case 0: break;
+            default: cout << "Opcion invalida.\n"; break;
+        }
+    } while(opcion != 0);
+
+
+
+
+
+
+}
+void altaProducto() {
+
+    ArchivoProductos archivo("productos.dat");
+    Productos prod;
+    prod.cargar();
+
+        if(archivo.Guardar(prod)) {
+                cout << "Producto guardado correctamente!" << endl;
+                } else {
+                cout << "Error al guardar!" << endl;
+                }
+
+                    }
+void listarProductos() {
+
+        ArchivoProductos archivo("productos.dat");
+        int cantidad = archivo.CantidadRegistros();
+
+        cout << "Cantidad de productos: " << cantidad << endl;
+
+            if(cantidad > 0) {
+                Productos *prods = new Productos[cantidad];
+                archivo.Leer(cantidad, prods);
+
+                for(int i = 0; i < cantidad; i++) {
+                    cout << "\n--- Registro " << i+1 << " ---" << endl;
+                    prods[i].mostrar();
+                                                    }
+                    delete[] prods;
+                                }
+                            }
 
 void menuProveedores() {}
 void altaProveedor() {}
@@ -99,4 +159,5 @@ void listarProveedores() {}
 void menuCompras() {}
 void registrarCompra() {}
 void listarCompras() {}
-*/
+
+
