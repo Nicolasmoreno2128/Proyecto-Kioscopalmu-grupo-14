@@ -157,7 +157,7 @@
 	"FuncionesGlobales.h"
 	"proveedor.h"
 
-1750534676 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
+1750549785 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
 	<iostream>
 	"Menu.h"
 	"ArchivoTipoProducto.h"
@@ -165,5 +165,5 @@
 	"Productos.h"
 	"ArchivoProductos.h"
 
-1750214234 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
+1750549556 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
 

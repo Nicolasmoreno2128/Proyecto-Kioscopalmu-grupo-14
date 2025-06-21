@@ -10,6 +10,8 @@ void listarTipoProductos();
 void menuProductos();
 void altaProducto();
 void listarProductos();
+void buscarProductos();
+void cantidadProductos();
 
 void menuProveedores();
 void altaProveedor();

@@ -88,7 +88,7 @@ void listarTipoProductos() {
     delete[] tipos;
 }
 
-// Las siguientes funciones ya estaban declaradas antes:
+/// Comienza menu productos
 
 
 void menuProductos() {
@@ -107,8 +107,8 @@ int opcion;
         switch(opcion) {
             case 1: altaProducto(); break;
             case 2: listarProductos(); break;
-            //case 3: buscarProductos(); break;
-            //case 2: cantidadProductos(); break;
+            case 3: buscarProductos(); break;
+            case 4: cantidadProductos(); break;
             case 0: break;
             default: cout << "Opcion invalida.\n"; break;
         }
@@ -151,11 +151,44 @@ void listarProductos() {
                     delete[] prods;
                                 }
                             }
+void buscarProductos(){
 
+        ArchivoProductos archivo("productos.dat");
+        int nro;
+            cout << "Numero de producto a buscar: ";
+            cin >> nro;
+
+            int pos = archivo.Buscar(nro);
+            if(pos != -1) {
+            Productos prod = archivo.Leer(pos);
+            cout << "Encontrado en posicion " << pos << ":" << endl;
+                    prod.mostrar();
+                            }
+                            else {
+                                cout << "No encontrado!" << endl;
+                                }
+
+                        }
+void cantidadProductos(){
+
+ArchivoProductos archivo("productos.dat");
+    cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
+
+}
+
+
+
+
+
+// FINALIZA Menu productos
+
+// Menu proveedores
 void menuProveedores() {}
 void altaProveedor() {}
 void listarProveedores() {}
 
+
+//Menu Compras
 void menuCompras() {}
 void registrarCompra() {}
 void listarCompras() {}
