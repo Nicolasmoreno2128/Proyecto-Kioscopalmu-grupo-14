@@ -194,7 +194,7 @@ int opcion;
             case 2: listarProveedores(); break;
             case 3: buscarProveedoresDNI(); break;
             case 4: buscarProveedoresCUIT(); break;
-           // case 5: CantidadProveedores(); break;
+            case 5: CantidadProveedores(); break;
             case 0: break;
             default: cout << "Opcion invalida.\n"; break;
         }
@@ -260,7 +260,10 @@ void buscarProveedoresCUIT(){
                     cout << "No encontrado!" << endl;
                     }
 }
-
+void CantidadProveedores(){
+    ArchivoProveedor archivo("proveedores.dat");
+    cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
+}
 
 //Menu Compras
 void menuCompras() {}
