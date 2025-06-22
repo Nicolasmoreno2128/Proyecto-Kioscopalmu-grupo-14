@@ -9,18 +9,18 @@ using namespace std;
 // Constructor por defecto
 proveedor::proveedor() {
     Dni = 0;
-    Cuit = 0;
     telefono = 0;
+    strcpy(Cuit, "");
     strcpy(nombre, "");
     strcpy(email, "");
     strcpy(direccion, "");
 }
 
-// Constructor con parámetros
-proveedor::proveedor(int _Dni, int _Cuit, int _telefono, const char* _nombre, const char* _email, const char* _direccion) {
+// Constructor con parámetros  // MODIFICAR los CUIT a modo Char para que compile correctamente
+proveedor::proveedor(int _Dni, int _telefono, const char* _Cuit, const char* _nombre, const char* _email, const char* _direccion) {
     Dni = _Dni;
-    Cuit = _Cuit;
     telefono = _telefono;
+    strcpy(Cuit, _Cuit);
     strcpy(nombre, _nombre);
     strcpy(email, _email);
     strcpy(direccion, _direccion);
@@ -31,12 +31,12 @@ int proveedor::getDni() {
     return Dni;
 }
 
-int proveedor::getCuit() {
-    return Cuit;
-}
-
 int proveedor::gettelefono() {
     return telefono;
+}
+
+const char* proveedor::getCuit() {
+    return Cuit;
 }
 
 const char* proveedor::getnombre() {
@@ -54,14 +54,14 @@ const char* proveedor::getdireccion() {
 // Métodos setter
 void proveedor::setDni(int _dni) {
     Dni = _dni;
-}
 
-void proveedor::setCuit(int _Cuit) {
-    Cuit = _Cuit;
 }
-
 void proveedor::settelefono(int _telefono) {
     telefono = _telefono;
+}
+
+void proveedor::setCuit(const char* _Cuit) {
+    strcpy(Cuit, _Cuit);
 }
 
 void proveedor::setnombre(const char* _nombre) {
@@ -80,10 +80,12 @@ void proveedor::setdireccion(const char* _direccion) {
 void proveedor::cargar() {
     cout << "DNI: ";
     cin >> Dni;
+    cin.ignore();
     cout << "CUIT: ";
-    cin >> Cuit;
+    cargarCadena(Cuit, 49);
     cout << "TELEFONO: ";
     cin >> telefono;
+    cin.ignore();
     cout << "NOMBRE: ";
     cargarCadena(nombre, 49);
     cout << "EMAIL: ";

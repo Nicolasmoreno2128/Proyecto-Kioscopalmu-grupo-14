@@ -44,7 +44,7 @@ int ArchivoProveedor::Buscar(int DNI){
     return -1;
 }
 
-int ArchivoProveedor::BuscarPorCuit(int CUIT){
+int ArchivoProveedor::BuscarPorCuit( const char* CUIT){
     FILE *pArchivo = fopen(_nombreArchivo, "rb");
     if(pArchivo == NULL){
         return -1;

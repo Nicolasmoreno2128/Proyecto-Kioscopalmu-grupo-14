@@ -13,9 +13,12 @@ void listarProductos();
 void buscarProductos();
 void cantidadProductos();
 
-void menuProveedores();
+void menuProveedor();
 void altaProveedor();
 void listarProveedores();
+void buscarProveedoresDNI();
+void buscarProveedoresCUIT();
+void CantidadProveedores();
 
 void menuCompras();
 void registrarCompra();
