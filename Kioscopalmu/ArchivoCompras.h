@@ -16,5 +16,5 @@ class ArchivoCompras{
 
         // metodos especificos para compras
         int BuscarPorProducto(int nroProducto);
-        int BuscarPorProveedor(int CUITproveedor);
+        int BuscarPorProveedor(const char* CUITproveedor);
 };

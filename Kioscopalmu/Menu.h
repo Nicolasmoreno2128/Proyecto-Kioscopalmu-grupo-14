@@ -6,6 +6,8 @@ void mostrarMenuPrincipal();
 void menuTipoProducto();
 void agregarTipoProducto();
 void listarTipoProductos();
+void Buscarporidtp();
+void Cantidadregistrostp();
 
 void menuProductos();
 void altaProducto();

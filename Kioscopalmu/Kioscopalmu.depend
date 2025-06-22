@@ -81,7 +81,7 @@
 1749419470 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.h
 	<cstring>
 
-1749419470 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.h
+1750633905 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.h
 	<string>
 	"Fecha.h"
 
@@ -97,17 +97,17 @@
 	<cstdio>
 	"Productos.h"
 
-1750043692 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivocompras.h
+1750634165 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivocompras.h
 	<cstdio>
 	"Compras.h"
 
-1750043692 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivocompras.cpp
+1750634120 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivocompras.cpp
 	"ArchivoCompras.h"
 	"Compras.cpp"
 	"Compras.h"
 	<cstring>
 
-1750043692 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.cpp
+1750633950 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.cpp
 	<iostream>
 	<cstdlib>
 	"FuncionesGlobales.h"
@@ -150,14 +150,14 @@
 	<cstdio>
 	"FuncionesGlobales.h"
 
-1750630207 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.cpp
+1750633872 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
 	"FuncionesGlobales.h"
 	"proveedor.h"
 
-1750628500 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
+1750633139 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
 	<iostream>
 	"Menu.h"
 	"ArchivoTipoProducto.h"
@@ -167,6 +167,8 @@
 	"proveedor.h"
 	"ArchivoProveedor.h"
 	"FuncionesGlobales.h"
+	"Compras.h"
+	"ArchivoCompras.h"
 
-1750550698 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
+1750632465 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
 

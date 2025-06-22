@@ -16,7 +16,7 @@ proveedor::proveedor() {
     strcpy(direccion, "");
 }
 
-// Constructor con parámetros  // MODIFICAR los CUIT a modo Char para que compile correctamente
+// Constructor con parámetros
 proveedor::proveedor(int _Dni, int _telefono, const char* _Cuit, const char* _nombre, const char* _email, const char* _direccion) {
     Dni = _Dni;
     telefono = _telefono;

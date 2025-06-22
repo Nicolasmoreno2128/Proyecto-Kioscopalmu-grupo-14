@@ -10,17 +10,17 @@ using namespace std;
 Compras::Compras() {
     idCompra = 0;
     nroProducto = 0;
-    CUITproveedor = 0;
+    strcpy(CUITproveedor,"" );
     fecha = Fecha(1,1,2025); // Fecha por defecto
     cantidad = 0;
     importe = 0.0;
 }
 
 // Constructor con parámetros
-Compras::Compras(int _idCompra, int _nroProducto, int _CUITproveedor, Fecha _fecha, int _cantidad, float _importe) {
+Compras::Compras(int _idCompra, int _nroProducto, const char* _CUITproveedor, Fecha _fecha, int _cantidad, float _importe) {
     idCompra = _idCompra;
     nroProducto = _nroProducto;
-    CUITproveedor = _CUITproveedor;
+    strcpy(CUITproveedor, _CUITproveedor);
     fecha = _fecha;
     cantidad = _cantidad;
     importe = _importe;
@@ -35,7 +35,7 @@ int Compras::getNroProducto() {
     return nroProducto;
 }
 
-int Compras::getCUITproveedor() {
+const char* Compras::getCUITproveedor() {
     return CUITproveedor;
 }
 
@@ -60,8 +60,8 @@ void Compras::setNroProducto(int _nroProducto) {
     nroProducto = _nroProducto;
 }
 
-void Compras::setCUITproveedor(int _CUITproveedor) {
-    CUITproveedor = _CUITproveedor;
+void Compras::setCUITproveedor(const char* _CUITproveedor) {
+   strcpy(CUITproveedor, _CUITproveedor);
 }
 
 void Compras::setFecha(Fecha _fecha) {
@@ -83,7 +83,7 @@ void Compras::cargar() {
     cout << "NUMERO DE PRODUCTO: ";
     cin >> nroProducto;
     cout << "CUIT PROVEEDOR: ";
-    cin >> CUITproveedor;
+    cargarCadena(CUITproveedor, 49);
     cout << "FECHA DE COMPRA:" << endl;
     fecha.Cargar();
     cout << "CANTIDAD: ";

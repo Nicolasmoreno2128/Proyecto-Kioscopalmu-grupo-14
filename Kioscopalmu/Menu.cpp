@@ -7,6 +7,8 @@
 #include "proveedor.h"
 #include "ArchivoProveedor.h"
 #include "FuncionesGlobales.h"
+#include "Compras.h"
+#include "ArchivoCompras.h"
 
 using namespace std;
 
@@ -41,12 +43,16 @@ void mostrarMenuPrincipal() {
 }
 
 // INICIA MENU TIPO DE PRODUCTO
+
 void menuTipoProducto() {
+
     int opcion;
     do {
         cout << "\n--- MENU TIPO DE PRODUCTO ---" << endl;
         cout << "1. Agregar tipo" << endl;
-        cout << "2. Listar tipos" << endl;
+        cout << "2. Listar todos" << endl;
+        cout << "3. Buscar por ID el Tipo de Producto" << endl;
+        cout << "4. Cantidad de Registros" << endl;
         cout << "0. Volver" << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
@@ -54,6 +60,8 @@ void menuTipoProducto() {
         switch(opcion) {
             case 1: agregarTipoProducto(); break;
             case 2: listarTipoProductos(); break;
+            case 3: Buscarporidtp(); break;
+            case 4: Cantidadregistrostp(); break;
             case 0: break;
             default: cout << "Opcion invalida.\n"; break;
         }
@@ -89,11 +97,35 @@ void listarTipoProductos() {
 
     delete[] tipos;
 }
+void Buscarporidtp(){
+
+    ArchivoTipoProducto archivo("tipos.dat");
+    int id;
+        cout << "ID a buscar: ";
+        cin >> id;
+
+        int pos = archivo.Buscar(id);
+        if(pos != -1) {
+            TipoProducto tipo = archivo.Leer(pos);
+            cout << "Encontrado en posicion " << pos << ":" << endl;
+            tipo.mostrar();
+        } else{
+            cout << "No encontrado!" << endl;
+                }
+
+}
+void Cantidadregistrostp(){
+
+    ArchivoTipoProducto archivo("tipos.dat");
+    cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
+}
+
 //FINALIZA MENU TIPO DE PRODUCTOS
 
 /// COMIENZA MENU DE PRODUCTO
 
 void menuProductos() {
+
 cout << "\n=== MENU PRODUCTOS ===" << endl;
 int opcion;
     do {
@@ -201,8 +233,6 @@ int opcion;
     } while(opcion != 0);
 }
 
-
-
 void altaProveedor() {
     ArchivoProveedor archivo("proveedores.dat");
     proveedor prov;
@@ -265,9 +295,53 @@ void CantidadProveedores(){
     cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 }
 
-//Menu Compras
-void menuCompras() {}
-void registrarCompra() {}
+// FINALIZA MENU DE PROVEEDOR
+
+
+
+///COMIENZA MENU COMPRAS
+
+void menuCompras() {
+
+cout << "\n=== MENU COMPRAS ===" << endl;
+
+    int opcion;
+    do {
+        cout << "1. Agregar compra" << endl;
+        cout << "2. Listar todas" << endl;
+        cout << "3. Buscar por ID compra" << endl;
+        cout << "4. Buscar por producto" << endl;
+        cout << "5. Buscar por proveedor" << endl;
+        cout << "6. Cantidad de registros" << endl;
+        cout << "0. Volver" << endl;
+        cout << "Opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+            case 1: registrarCompra(); break;
+            case 2: listarCompras(); break;
+            //case 3: buscarProveedoresDNI(); break;
+            //case 4: buscarProveedoresCUIT(); break;
+            //case 5: CantidadProveedores(); break;
+            case 0: break;
+            default: cout << "Opcion invalida.\n"; break;
+        }
+    } while(opcion != 0);
+
+}
+
+void registrarCompra() {
+    ArchivoCompras archivo("compras.dat");
+    Compras compra;
+    compra.cargar();
+
+    if(archivo.Guardar(compra)) {
+        cout << "Compra guardada correctamente!" << endl;
+                                }
+    else {
+        cout << "Error al guardar!" << endl;
+        }
+}
 void listarCompras() {}
 
 

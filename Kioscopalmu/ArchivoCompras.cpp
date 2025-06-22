@@ -64,7 +64,7 @@ int ArchivoCompras::BuscarPorProducto(int nroProducto){
     return -1;
 }
 
-int ArchivoCompras::BuscarPorProveedor(int CUITproveedor){
+int ArchivoCompras::BuscarPorProveedor(const char* CUITproveedor){
     FILE *pArchivo = fopen(_nombreArchivo, "rb");
     if(pArchivo == NULL){
         return -1;
@@ -72,7 +72,7 @@ int ArchivoCompras::BuscarPorProveedor(int CUITproveedor){
     Compras compra;
     int i = 0;
     while(fread(&compra, sizeof(Compras), 1, pArchivo)){
-        if(compra.getCUITproveedor() == CUITproveedor){
+        if(strcmp(compra.getCUITproveedor(),CUITproveedor)==0){
             fclose(pArchivo);
             return i;
         }
