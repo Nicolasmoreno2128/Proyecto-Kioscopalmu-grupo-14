@@ -52,7 +52,7 @@ int ArchivoProveedor::BuscarPorCuit( const char* CUIT){
     proveedor prov;
     int i = 0;
     while(fread(&prov, sizeof(proveedor), 1, pArchivo)){
-        if(prov.getCuit() == CUIT){
+        if(strcmp(prov.getCuit(), CUIT) == 0){
             fclose(pArchivo);
             return i;
         }
