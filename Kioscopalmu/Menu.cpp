@@ -323,7 +323,7 @@ cout << "\n=== MENU COMPRAS ===" << endl;
             case 3: buscarxIDcompra(); break;
             case 4: buscarProducto(); break;
             case 5: buscarProveedorcomp(); break;
-            //case 6: Cantidadregistroscomp(); break;
+            case 6: Cantidadregistroscomp(); break;
             case 0: break;
             default: cout << "Opcion invalida.\n"; break;
         }
@@ -407,16 +407,9 @@ void buscarProveedorcomp(){
             else { cout << "No encontrada!" << endl;
                   }
 }
-
-
-
-
-
 void Cantidadregistroscomp(){
-
-
-
-
+    ArchivoCompras archivo("compras.dat");
+        cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 }
 
 
