@@ -322,7 +322,8 @@ cout << "\n=== MENU COMPRAS ===" << endl;
             case 2: listarCompras(); break;
             case 3: buscarxIDcompra(); break;
             case 4: buscarProducto(); break;
-            //case 5: Cantidadregistroscomp(); break;
+            case 5: buscarProveedorcomp(); break;
+            //case 6: Cantidadregistroscomp(); break;
             case 0: break;
             default: cout << "Opcion invalida.\n"; break;
         }
@@ -391,3 +392,32 @@ void buscarProducto(){
                 cout << "No encontrada!" << endl;
                     }
 }
+void buscarProveedorcomp(){
+    ArchivoCompras archivo("compras.dat");
+     char cuit[25];
+        cout << "CUIT de proveedor a buscar: ";
+        cargarCadena(cuit,25);
+
+        int pos = archivo.BuscarPorProveedor(cuit);
+            if(pos != -1) {
+                Compras compra = archivo.Leer(pos);
+                    cout << "Encontrada en posicion " << pos << ":" << endl;
+                    compra.mostrar();
+                    }
+            else { cout << "No encontrada!" << endl;
+                  }
+}
+
+
+
+
+
+void Cantidadregistroscomp(){
+
+
+
+
+}
+
+
+

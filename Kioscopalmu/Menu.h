@@ -27,6 +27,7 @@ void registrarCompra();
 void listarCompras();
 void buscarxIDcompra();
 void buscarProducto();
+void buscarProveedorcomp();
 void Cantidadregistroscomp();
 
 #endif // MENU_H
