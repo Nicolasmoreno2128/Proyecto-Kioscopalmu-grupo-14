@@ -39,10 +39,31 @@ void TipoProducto::setNombre(const char* _nombre) {
 
 // Método para cargar datos
 void TipoProducto::cargar() {
-    cout << "ID TIPO PRODUCTO: ";
-    cin >> idTipoProducto;
-    cout << "NOMBRE: ";
-    cargarCadena(nombre, 49);
+// Validar ID tipo producto
+    do {
+        cout << "ID TIPO PRODUCTO (entero positivo): ";
+        cin >> idTipoProducto;
+
+        if(cin.fail() || idTipoProducto <= 0) {
+            cout << "Valor inválido. Ingrese un número entero positivo.\n";
+            cin.clear(); // Limpia el error
+            cin.ignore(1000, '\n'); // Descarta la entrada inválida
+        } else {
+            break; // Entrada válida
+        }
+    } while(true);
+
+    // Validar nombre no vacío
+    do {
+        cout << "NOMBRE: ";
+        cargarCadena(nombre, 49);
+
+        if(strlen(nombre) == 0) {
+            cout << "El nombre no puede estar vacío. Intente nuevamente.\n";
+        } else {
+            break;
+        }
+    } while(true);
 }
 
 // Método para mostrar datos
