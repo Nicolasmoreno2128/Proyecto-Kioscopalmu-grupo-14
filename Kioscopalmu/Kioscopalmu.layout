@@ -7,34 +7,48 @@
 			<Cursor1 position="609" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Productos.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="36" />
-		</Cursor>
-	</File>
 	<File name="TipoProducto.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Menu.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ArchivoProductos.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="876" topLine="25" />
+			<Cursor1 position="962" topLine="13" />
 		</Cursor>
 	</File>
-	<File name="Compras.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="proveedor.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="113" topLine="0" />
+			<Cursor1 position="300" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="79" />
+			<Collapse line="97" />
+		</Folding>
+	</File>
+	<File name="FuncionesGlobales.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="346" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ArchivoTipoProducto.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Menu.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="731" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ArchivoTipoProducto.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="755" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Compras.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ArchivoProveedor.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="380" topLine="4" />
+			<Cursor1 position="772" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="exportarCSV.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="400" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="ArchivoProveedor.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -47,14 +61,14 @@
 			<Cursor1 position="722" topLine="1" />
 		</Cursor>
 	</File>
-	<File name="ArchivoCompras.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="backup.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="863" topLine="2" />
+			<Cursor1 position="6583" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ArchivoProductos.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ArchivoProductos.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="740" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Productos.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -62,33 +76,19 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="FuncionesGlobales.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Productos.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="346" topLine="0" />
+			<Cursor1 position="0" topLine="36" />
 		</Cursor>
 	</File>
-	<File name="proveedor.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ArchivoCompras.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="300" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="79" />
-			<Collapse line="97" />
-		</Folding>
-	</File>
-	<File name="ArchivoCompras.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="927" topLine="16" />
+			<Cursor1 position="865" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="backup.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Menu.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6583" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Menu.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1300" topLine="28" />
+			<Cursor1 position="6988" topLine="86" />
 		</Cursor>
 		<Folding>
 			<Collapse line="52" />
@@ -101,7 +101,6 @@
 			<Collapse line="169" />
 			<Collapse line="187" />
 			<Collapse line="205" />
-			<Collapse line="216" />
 			<Collapse line="241" />
 			<Collapse line="252" />
 			<Collapse line="268" />
@@ -118,11 +117,6 @@
 			<Collapse line="475" />
 		</Folding>
 	</File>
-	<File name="FuncionesGlobales.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="120" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="Compras.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="380" topLine="4" />
@@ -130,22 +124,17 @@
 	</File>
 	<File name="ArchivoCompras.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1663" topLine="73" />
+			<Cursor1 position="48" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ArchivoProductos.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Compras.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="113" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ArchivoProductos.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="FuncionesGlobales.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="962" topLine="13" />
-		</Cursor>
-	</File>
-	<File name="ArchivoProveedor.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="772" topLine="0" />
+			<Cursor1 position="120" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="ArchivoTipoProducto.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
