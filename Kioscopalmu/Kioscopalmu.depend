@@ -172,3 +172,178 @@
 
 1750643005 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
 
+1751124984 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivocompras.cpp
+	"ArchivoCompras.h"
+	"Compras.h"
+	<cstring>
+
+1751127985 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivocompras.h
+	<cstdio>
+	"Compras.h"
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.h
+	<string>
+	"Fecha.h"
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\fecha.h
+	<iostream>
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.cpp
+	<iostream>
+	<cstdlib>
+	"FuncionesGlobales.h"
+	"Compras.h"
+	"Fecha.h"
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\funcionesglobales.h
+	<cstring>
+
+1751124984 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivoproductos.cpp
+	"ArchivoProductos.h"
+	"Productos.h"
+	<cstring>
+
+1751127859 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivoproductos.h
+	<cstdio>
+	"Productos.h"
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.h
+	<cstring>
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	"FuncionesGlobales.h"
+	"Productos.h"
+
+1750888800 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivoproveedor.cpp
+	"ArchivoProveedor.h"
+	<cstring>
+
+1751128030 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivoproveedor.h
+	<cstdio>
+	"proveedor.h"
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.h
+	<string>
+
+1751124984 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivotipoproducto.cpp
+	"ArchivoTipoProducto.h"
+	"TipoProducto.h"
+	<cstring>
+
+1751128060 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\archivotipoproducto.h
+	<cstdio>
+	"TipoProducto.h"
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.h
+	<cstring>
+
+1750888800 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	"FuncionesGlobales.h"
+	"TipoProducto.h"
+
+1750888800 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\funcionesglobales.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"FuncionesGlobales.h"
+
+1750888800 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	"FuncionesGlobales.h"
+	"proveedor.h"
+
+1750891129 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\main.cpp
+	<iostream>
+	<cstring>
+	"FuncionesGlobales.h"
+	"Fecha.h"
+	"TipoProducto.h"
+	"proveedor.h"
+	"Productos.h"
+	"Compras.h"
+	"menu.h"
+	"ArchivoTipoProducto.h"
+	"ArchivoProveedor.h"
+	"ArchivoProductos.h"
+	"ArchivoCompras.h"
+
+1751129535 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
+
+1751129431 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoTipoProducto.h"
+	"TipoProducto.h"
+	"Productos.h"
+	"ArchivoProductos.h"
+	"proveedor.h"
+	"ArchivoProveedor.h"
+	"FuncionesGlobales.h"
+	"Compras.h"
+	"ArchivoCompras.h"
+	"exportarCSV.h"
+	"backup.h"
+
+1750891238 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\exportarcsv.h
+
+1750891965 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\exportarcsv.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	<fstream>
+	"exportarCSV.h"
+	"ArchivoCompras.h"
+	"ArchivoProveedor.h"
+	"ArchivoProductos.h"
+	"ArchivoTipoProducto.h"
+	"Compras.h"
+	"proveedor.h"
+	"Productos.h"
+	"TipoProducto.h"
+	"Fecha.h"
+
+1750893708 c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\backup.h
+	<iostream>
+	<cstdio>
+	"ArchivoCompras.h"
+	"ArchivoProductos.h"
+	"ArchivoProveedor.h"
+	"ArchivoTipoProducto.h"
+	"Compras.h"
+	"Productos.h"
+	"proveedor.h"
+	"TipoProducto.h"
+
+1751126647 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.cpp
+	<iostream>
+	<cstdlib>
+	"FuncionesGlobales.h"
+	"Compras.h"
+	<cstring>
+	"Fecha.h"
+
+1750888800 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	"FuncionesGlobales.h"
+	"Productos.h"
+
+1750888800 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	"FuncionesGlobales.h"
+	"TipoProducto.h"
+
+1751124140 source:c:\users\tpalm\desktop\programacion 2\kioscopalmu\cambios nico\proyecto-kioscopalmu-grupo-14\kioscopalmu\backup.cpp
+	"backup.h"
+

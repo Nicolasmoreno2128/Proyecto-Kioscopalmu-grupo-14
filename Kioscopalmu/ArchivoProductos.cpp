@@ -1,5 +1,4 @@
 #include "ArchivoProductos.h"
-#include "Productos.cpp"
 #include "Productos.h"
 #include <cstring>
 

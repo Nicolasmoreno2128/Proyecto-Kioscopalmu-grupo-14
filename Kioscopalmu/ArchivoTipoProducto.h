@@ -1,3 +1,5 @@
+#ifndef ARCHIVOTIPOPRODUCTO_H_INCLUDED
+#define ARCHIVOTIPOPRODUCTO_H_INCLUDED
 #include <cstdio>
 #include "TipoProducto.h"
 
@@ -13,4 +15,7 @@ class ArchivoTipoProducto{
         TipoProducto Leer(int posicion);
         int CantidadRegistros();
         void Leer(int cantidadRegistros, TipoProducto *vector);
+        bool RealizarCopiaSeguridad(const char* nombreBackup = "tipos.bkp");
+        bool RestaurarDesdeBackup(const char* nombreBackup = "tipos.bkp");
 };
+#endif // ARCHIVOTIPOPRODUCTO_H_INCLUDED

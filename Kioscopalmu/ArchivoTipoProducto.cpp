@@ -1,5 +1,4 @@
 #include "ArchivoTipoProducto.h"
-#include "TipoProducto.cpp"
 #include "TipoProducto.h"
 #include <cstring>
 

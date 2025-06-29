@@ -9,6 +9,8 @@
 #include "FuncionesGlobales.h"
 #include "Compras.h"
 #include "ArchivoCompras.h"
+#include "exportarCSV.h"
+#include "backup.h"
 
 using namespace std;
 
@@ -27,6 +29,8 @@ void mostrarMenuPrincipal() {
         cout << "2. Productos" << endl;
         cout << "3. Proveedores" << endl;
         cout << "4. Compras" << endl;
+        cout << "5. Exportaciones a CSV" << endl;
+        cout << "6. Backup y Restauracion" << endl;
         cout << "0. Salir" << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
@@ -36,6 +40,8 @@ void mostrarMenuPrincipal() {
             case 2: menuProductos(); break;
             case 3: menuProveedor(); break;
             case 4: menuCompras(); break;
+            case 5: menuExportaciones(); break;
+            case 6: menuBackup(); break;
             case 0: cout << "Saliendo del programa." << endl; break;
             default: cout << "Opcion invalida. Intente nuevamente.\n"; break;
         }
@@ -298,7 +304,6 @@ void CantidadProveedores(){
 // FINALIZA MENU DE PROVEEDOR
 
 
-
 ///COMIENZA MENU COMPRAS
 
 void menuCompras() {
@@ -412,5 +417,125 @@ void Cantidadregistroscomp(){
         cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 }
 
+/// COMIENZA MENU EXPORTAR CSV
 
+void menuExportaciones() {
+
+    int opcion;
+    do {
+        cout << "\n=== MENU EXPORTACIONES ===" << endl;
+        cout << "1. Exportar Compras a CSV" << endl;
+        cout << "2. Exportar Proveedores a CSV" << endl;
+        cout << "3. Exportar Productos a CSV" << endl;
+        cout << "4. Exportar Tipos de Producto a CSV" << endl;
+        cout << "5. Exportar TODO (todos los archivos)" << endl;
+        cout << "0. Volver al menu principal" << endl;
+        cout << "==================================" << endl;
+        cout << "Opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+            case 1:
+                exportarExcelCompras();
+                break;
+            case 2:
+                exportarExcelProveedores();
+                break;
+            case 3:
+                exportarExcelProductos();
+                break;
+            case 4:
+                exportarExcelTipoProductos();
+                break;
+            case 5:
+                cout << "Exportando todos los archivos..." << endl;
+                exportarExcelCompras();
+                exportarExcelProveedores();
+                exportarExcelProductos();
+                exportarExcelTipoProductos();
+                cout << "Exportacion completa finalizada!" << endl;
+                break;
+            case 0:
+                cout << "Volviendo al menu principal..." << endl;
+                break;
+            default:
+                cout << "Opcion invalida!" << endl;
+        }
+
+        if(opcion != 0) {
+            cout << "\nPresione Enter para continuar...";
+            cin.ignore();
+            cin.get();
+        }
+
+    } while(opcion != 0);
+}
+
+/// COMIENZA MENU BACKUP
+
+void menuBackup(){
+    int opcion;
+    do {
+        cout << "\n=== MENU BACKUP Y RESTAURACION ===" << endl;
+        cout << "1. Backup de Compras" << endl;
+        cout << "2. Backup de Productos" << endl;
+        cout << "3. Backup de Proveedores" << endl;
+        cout << "4. Backup de Tipos de Producto" << endl;
+        cout << "5. Backup Completo (todos los archivos)" << endl;
+        cout << "6. Restaurar Compras" << endl;
+        cout << "7. Restaurar Productos" << endl;
+        cout << "8. Restaurar Proveedores" << endl;
+        cout << "9. Restaurar Tipos de Producto" << endl;
+        cout << "10. Restauracion Completa" << endl;
+        cout << "0. Volver al menu principal" << endl;
+        cout << "======================================" << endl;
+        cout << "Opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+            case 1:
+                realizarCopiaCompras();
+                break;
+            case 2:
+                realizarCopiaProductos();
+                break;
+            case 3:
+                realizarCopiaProveedores();
+                break;
+            case 4:
+                realizarCopiaTipoProductos();
+                break;
+            case 5:
+                realizarBackupCompleto();
+                break;
+            case 6:
+                restaurarComprasDesdeBackup();
+                break;
+            case 7:
+                restaurarProductosDesdeBackup();
+                break;
+            case 8:
+                restaurarProveedoresDesdeBackup();
+                break;
+            case 9:
+                restaurarTipoProductosDesdeBackup();
+                break;
+            case 10:
+                restaurarBackupCompleto();
+                break;
+            case 0:
+                cout << "Volviendo al menu principal..." << endl;
+                break;
+            default:
+                cout << "Opcion invalida!" << endl;
+        }
+
+        if(opcion != 0) {
+            cout << "\nPresione Enter para continuar...";
+            cin.ignore();
+            cin.get();
+        }
+
+    } while(opcion != 0);
+}
 

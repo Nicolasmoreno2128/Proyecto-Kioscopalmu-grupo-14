@@ -1,5 +1,4 @@
 #include "ArchivoCompras.h"
-#include "Compras.cpp"
 #include "Compras.h"
 #include <cstring>
 

@@ -29,5 +29,20 @@ void buscarxIDcompra();
 void buscarProducto();
 void buscarProveedorcomp();
 void Cantidadregistroscomp();
-
+int exportarExcelCompras();
+int exportarExcelProveedores();
+int exportarExcelProductos();
+int exportarExcelTipoProductos();
+void menuExportaciones();
+void menuBackup();
+//bool realizarCopiaCompras();
+//bool realizarCopiaProductos();
+//bool realizarCopiaProveedores();
+//bool realizarCopiaTipoProductos();
+//bool realizarBackupCompleto();
+//bool restaurarComprasDesdeBackup();
+//bool restaurarProductosDesdeBackup();
+//bool restaurarProveedoresDesdeBackup();
+//bool restaurarTipoProductosDesdeBackup();
+//bool restaurarBackupCompleto();
 #endif // MENU_H

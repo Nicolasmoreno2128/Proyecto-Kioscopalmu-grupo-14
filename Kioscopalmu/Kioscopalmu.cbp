@@ -67,6 +67,14 @@
 		<Unit filename="TipoProducto.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="backup.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="backup.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="exportarCSV.cpp" />
+		<Unit filename="exportarCSV.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="proveedor.cpp" />
 		<Unit filename="proveedor.h" />

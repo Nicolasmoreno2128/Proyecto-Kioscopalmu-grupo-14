@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include "FuncionesGlobales.h"
 #include "Compras.h"
+#include <cstring>
 
 using namespace std;
 #include "Fecha.h"
