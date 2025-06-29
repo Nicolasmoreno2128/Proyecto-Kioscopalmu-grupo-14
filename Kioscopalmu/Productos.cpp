@@ -69,16 +69,58 @@ void Productos::setStock(int _stock) {
 
 // Método para cargar datos
 void Productos::cargar() {
-    cout << "NUMERO DE PRODUCTO: ";
-    cin >> nroProducto;
-    cout << "NOMBRE: ";
-    cargarCadena(nombre, 49);
-    cout << "ID TIPO PRODUCTO: ";
-    cin >> idTipoProducto;
-    cout << "PRECIO: ";
-    cin >> precio;
-    cout << "STOCK: ";
-    cin >> stock;
+// Validar número de producto
+    do {
+        cout << "NUMERO DE PRODUCTO (entero positivo): ";
+        cin >> nroProducto;
+        if(cin.fail() || nroProducto <= 0) {
+            cout << "Valor inválido. Intente nuevamente.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while(true);
+
+    // Validar nombre no vacío
+    do {
+        cout << "NOMBRE: ";
+        cargarCadena(nombre, 49);
+        if(strlen(nombre) == 0) {
+            cout << "El nombre no puede estar vacío.\n";
+        } else break;
+    } while(true);
+
+    // Validar ID Tipo de producto
+    do {
+        cout << "ID TIPO PRODUCTO (entero positivo): ";
+        cin >> idTipoProducto;
+        if(cin.fail() || idTipoProducto <= 0) {
+            cout << "Valor inválido. Intente nuevamente.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while(true);
+
+    // Validar precio
+    do {
+        cout << "PRECIO (mayor a 0): ";
+        cin >> precio;
+        if(cin.fail() || precio <= 0) {
+            cout << "Precio inválido. Ingrese un número mayor a 0.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while(true);
+
+    // Validar stock
+    do {
+        cout << "STOCK (entero positivo): ";
+        cin >> stock;
+        if(cin.fail() || stock < 0) {
+            cout << "Stock inválido. Ingrese un valor igual o mayor a 0.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while(true);
 }
 
 // Método para mostrar datos

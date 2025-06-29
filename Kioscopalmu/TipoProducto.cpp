@@ -51,7 +51,7 @@ void TipoProducto::cargar() {
         } else {
             break; // Entrada válida
         }
-    } while(true);
+        } while(true);
 
     // Validar nombre no vacío
     do {
@@ -63,7 +63,7 @@ void TipoProducto::cargar() {
         } else {
             break;
         }
-    } while(true);
+        } while(true);
 }
 
 // Método para mostrar datos

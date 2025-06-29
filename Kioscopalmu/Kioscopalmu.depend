@@ -389,7 +389,7 @@
 	"Fecha.h"
 	"ArchivoCompras.h"
 
-1751238952 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
+1751241094 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
@@ -397,7 +397,7 @@
 	"Productos.h"
 	"ArchivoProductos.h"
 
-1751238999 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
+1751241013 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
