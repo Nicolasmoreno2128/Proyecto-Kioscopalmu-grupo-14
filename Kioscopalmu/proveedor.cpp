@@ -4,6 +4,7 @@
 using namespace std;
 #include "FuncionesGlobales.h"
 #include "proveedor.h"
+#include "ArchivoProveedor.h"
 
 
 // Constructor por defecto
@@ -102,4 +103,65 @@ void proveedor::mostrar() {
     cout << "Nombre: " << nombre << endl;
     cout << "Email: " << email << endl;
     cout << "Direccion: " << direccion << endl;
+}
+void altaProveedor() {
+    ArchivoProveedor archivo("proveedores.dat");
+    proveedor prov;
+    prov.cargar();
+
+        if(archivo.Guardar(prov)) {
+            cout << "Proveedor guardado correctamente!" << endl;
+        } else {
+                cout << "Error al guardar!" << endl;
+                }
+}
+void listarProveedores() {
+    ArchivoProveedor archivo("proveedores.dat");
+    int cantidad = archivo.CantidadRegistros();
+        cout << "Cantidad de proveedores: " << cantidad << endl;
+
+            if(cantidad > 0) {
+                proveedor *provs = new proveedor[cantidad];
+                archivo.Leer(cantidad, provs);
+
+            for(int i = 0; i < cantidad; i++) {
+                        cout << "\n--- Registro " << i+1 << " ---" << endl;
+                        provs[i].mostrar();
+                                                }
+                    delete[] provs;
+                            }
+}
+void buscarProveedoresDNI(){
+        ArchivoProveedor archivo("proveedores.dat");
+        int dni;
+            cout << "DNI a buscar: ";
+            cin >> dni;
+
+        int pos = archivo.Buscar(dni);
+            if(pos != -1) {
+                proveedor prov = archivo.Leer(pos);
+                cout << "Encontrado en posicion " << pos << ":" << endl;
+                prov.mostrar();
+                } else {
+                cout << "No encontrado!" << endl;
+                }
+}
+void buscarProveedoresCUIT(){
+    ArchivoProveedor archivo("proveedores.dat");
+    char cuit[25];
+            cout << "CUIT a buscar: ";
+            cargarCadena(cuit,25);
+
+        int pos = archivo.BuscarPorCuit(cuit);
+            if(pos != -1) {
+                proveedor prov = archivo.Leer(pos);
+                cout << "Encontrado en posicion " << pos << ":" << endl;
+                prov.mostrar();
+            } else {
+                    cout << "No encontrado!" << endl;
+                    }
+}
+void CantidadProveedores(){
+    ArchivoProveedor archivo("proveedores.dat");
+    cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 }

@@ -34,6 +34,11 @@ class proveedor {
 
         void cargar();
         void mostrar();
+        void altaProveedor();
+        void listarProveedores();
+        void buscarProveedoresDNI();
+        void buscarProveedoresCUIT();
+        void CantidadProveedores();
 
 };
 

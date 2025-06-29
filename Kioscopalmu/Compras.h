@@ -38,6 +38,12 @@ public:
     // Métodos adicionales
     void cargar();
     void mostrar();
+    void registrarCompra();
+    void listarCompras();
+    void buscarxIDcompra();
+    void buscarProducto();
+    void buscarProveedorcomp();
+    void Cantidadregistroscomp();
 };
 
 #endif // COMPRAS_H_INCLUDED

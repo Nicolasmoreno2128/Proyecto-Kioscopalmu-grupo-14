@@ -29,6 +29,7 @@ void buscarxIDcompra();
 void buscarProducto();
 void buscarProveedorcomp();
 void Cantidadregistroscomp();
+
 int exportarExcelCompras();
 int exportarExcelProveedores();
 int exportarExcelProductos();

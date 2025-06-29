@@ -6,6 +6,7 @@
 
 using namespace std;
 #include "Fecha.h"
+#include "ArchivoCompras.h"
 
 // Constructor por defecto
 Compras::Compras() {
@@ -102,4 +103,84 @@ void Compras::mostrar() {
     fecha.Mostrar();
     cout << "Cantidad: " << cantidad << endl;
     cout << "Importe: $" << importe << endl;
+}
+void registrarCompra() {
+    ArchivoCompras archivo("compras.dat");
+    Compras compra;
+    compra.cargar();
+
+    if(archivo.Guardar(compra)) {
+        cout << "Compra guardada correctamente!" << endl;
+                                }
+    else {
+        cout << "Error al guardar!" << endl;
+        }
+}
+void listarCompras() {
+
+    ArchivoCompras archivo("compras.dat");
+    int cantidad = archivo.CantidadRegistros();
+        cout << "Cantidad de compras: " << cantidad << endl;
+
+        if(cantidad > 0) {
+            Compras *compras = new Compras[cantidad];
+            archivo.Leer(cantidad, compras);
+
+        for(int i = 0; i < cantidad; i++) {
+                cout << "\n--- Registro " << i+1 << " ---" << endl;
+                compras[i].mostrar();
+                                            }
+            delete[] compras;
+                            }
+
+}
+void buscarxIDcompra(){
+
+    ArchivoCompras archivo("compras.dat");
+    int id;
+        cout << "ID de compra a buscar: ";
+        cin >> id;
+
+        int pos = archivo.Buscar(id);
+            if(pos != -1) {
+            Compras compra = archivo.Leer(pos);
+            cout << "Encontrada en posicion " << pos << ":" << endl;
+            compra.mostrar();
+            } else {
+            cout << "No encontrada!" << endl;
+                    }
+}
+void buscarProducto(){
+    ArchivoCompras archivo("compras.dat");
+    int nroProd;
+        cout << "Numero de producto a buscar: ";
+        cin >> nroProd;
+
+            int pos = archivo.BuscarPorProducto(nroProd);
+            if(pos != -1) {
+                Compras compra = archivo.Leer(pos);
+                cout << "Encontrada en posicion " << pos << ":" << endl;
+                    compra.mostrar();
+            } else {
+                cout << "No encontrada!" << endl;
+                    }
+}
+void buscarProveedorcomp(){
+    ArchivoCompras archivo("compras.dat");
+     char cuit[25];
+        cout << "CUIT de proveedor a buscar: ";
+        cargarCadena(cuit,25);
+
+        int pos = archivo.BuscarPorProveedor(cuit);
+            if(pos != -1) {
+                Compras compra = archivo.Leer(pos);
+                    cout << "Encontrada en posicion " << pos << ":" << endl;
+                    compra.mostrar();
+                    }
+            else { cout << "No encontrada!" << endl;
+                  }
+}
+void Cantidadregistroscomp(){
+    ArchivoCompras archivo("compras.dat");
+        cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 }
