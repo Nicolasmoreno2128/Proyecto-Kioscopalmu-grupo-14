@@ -50,6 +50,7 @@ void TipoProducto::mostrar() {
     cout << "ID Tipo Producto: " << idTipoProducto << endl;
     cout << "Nombre: " << nombre << endl;
 }
+// Metodos del menu
 
 void agregarTipoProducto() {
     ArchivoTipoProducto archivo("tipos.dat");
@@ -62,7 +63,6 @@ void agregarTipoProducto() {
         cout << "Error al guardar!" << endl;
     }
 }
-
 void listarTipoProductos() {
     ArchivoTipoProducto archivo("tipos.dat");
     int cantidad = archivo.CantidadRegistros();

@@ -104,6 +104,7 @@ void proveedor::mostrar() {
     cout << "Email: " << email << endl;
     cout << "Direccion: " << direccion << endl;
 }
+// Metodos del menu
 void altaProveedor() {
     ArchivoProveedor archivo("proveedores.dat");
     proveedor prov;

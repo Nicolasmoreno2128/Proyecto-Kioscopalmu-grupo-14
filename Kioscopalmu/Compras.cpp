@@ -104,6 +104,7 @@ void Compras::mostrar() {
     cout << "Cantidad: " << cantidad << endl;
     cout << "Importe: $" << importe << endl;
 }
+// Metodos del menu
 void registrarCompra() {
     ArchivoCompras archivo("compras.dat");
     Compras compra;

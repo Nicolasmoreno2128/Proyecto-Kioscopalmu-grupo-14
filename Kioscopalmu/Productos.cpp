@@ -90,6 +90,8 @@ void Productos::mostrar() {
     cout << "Stock: " << stock << endl;
 }
 
+// Metodos del menu
+
 void altaProducto() {
 
     ArchivoProductos archivo("productos.dat");
