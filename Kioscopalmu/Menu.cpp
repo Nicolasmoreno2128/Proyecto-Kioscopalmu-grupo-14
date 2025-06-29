@@ -102,6 +102,7 @@ int opcion;
         }
     } while(opcion != 0);
 }
+/*
 void altaProducto() {
 
     ArchivoProductos archivo("productos.dat");
@@ -157,7 +158,7 @@ ArchivoProductos archivo("productos.dat");
     cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 
 }
-
+*/
 /// FINALIZA Menu productos
 
 

@@ -5,6 +5,7 @@
 using namespace std;
 #include "FuncionesGlobales.h"
 #include "Productos.h"
+#include "ArchivoProductos.h"
 
 // Constructor por defecto
 Productos::Productos() {
@@ -87,4 +88,60 @@ void Productos::mostrar() {
     cout << "ID Tipo Producto: " << idTipoProducto << endl;
     cout << "Precio: $" << precio << endl;
     cout << "Stock: " << stock << endl;
+}
+
+void altaProducto() {
+
+    ArchivoProductos archivo("productos.dat");
+    Productos prod;
+    prod.cargar();
+
+        if(archivo.Guardar(prod)) {
+                cout << "Producto guardado correctamente!" << endl;
+                } else {
+                cout << "Error al guardar!" << endl;
+                }
+
+                    }
+void listarProductos() {
+
+        ArchivoProductos archivo("productos.dat");
+        int cantidad = archivo.CantidadRegistros();
+
+        cout << "Cantidad de productos: " << cantidad << endl;
+
+            if(cantidad > 0) {
+                Productos *prods = new Productos[cantidad];
+                archivo.Leer(cantidad, prods);
+
+                for(int i = 0; i < cantidad; i++) {
+                    cout << "\n--- Registro " << i+1 << " ---" << endl;
+                    prods[i].mostrar();
+                                                    }
+                    delete[] prods;
+                                }
+                            }
+void buscarProductos(){
+
+        ArchivoProductos archivo("productos.dat");
+        int nro;
+            cout << "Numero de producto a buscar: ";
+            cin >> nro;
+
+            int pos = archivo.Buscar(nro);
+            if(pos != -1) {
+            Productos prod = archivo.Leer(pos);
+            cout << "Encontrado en posicion " << pos << ":" << endl;
+                    prod.mostrar();
+                            }
+                            else {
+                                cout << "No encontrado!" << endl;
+                                }
+
+                        }
+void cantidadProductos(){
+
+ArchivoProductos archivo("productos.dat");
+    cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
+
 }

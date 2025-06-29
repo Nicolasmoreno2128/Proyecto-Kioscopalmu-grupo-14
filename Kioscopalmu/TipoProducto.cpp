@@ -5,7 +5,6 @@
 using namespace std;
 #include "FuncionesGlobales.h"
 #include "TipoProducto.h"
-#include "ArchivoCompras.h"
 #include "ArchivoTipoProducto.h"
 
 // Constructor por defecto

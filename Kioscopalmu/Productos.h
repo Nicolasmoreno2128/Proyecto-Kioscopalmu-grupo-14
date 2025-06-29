@@ -34,6 +34,10 @@ public:
     // Metodos adicionales
     void cargar();
     void mostrar();
+    void altaProducto();
+    void listarProductos();
+    void buscarProductos();
+    void cantidadProductos();
 };
 
 #endif // PRODUCTOS_H_INCLUDED
