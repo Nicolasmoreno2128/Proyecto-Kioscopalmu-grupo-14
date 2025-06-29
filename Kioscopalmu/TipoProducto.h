@@ -25,6 +25,10 @@ public:
     // Métodos adicionales
     void cargar();
     void mostrar();
+    void agregarTipoProducto();
+    void listarTipoProductos();
+    void Buscarporidtp();
+    void Cantidadregistrostp();
 };
 
 #endif // TIPOPRODUCTO_H_INCLUDED

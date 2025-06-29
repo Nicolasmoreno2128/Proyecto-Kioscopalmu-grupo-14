@@ -64,66 +64,14 @@ void menuTipoProducto() {
         cin >> opcion;
 
         switch(opcion) {
-            case 1: agregarTipoProducto(); break;
-            case 2: listarTipoProductos(); break;
-            case 3: Buscarporidtp(); break;
-            case 4: Cantidadregistrostp(); break;
+            case 1: agregarTipoProducto(); break; //Agregar tipo de producto
+            case 2: listarTipoProductos(); break; // Listar todos los tipos de productos
+            case 3: Buscarporidtp(); break;       // Buscar por tipo de producto
+            case 4: Cantidadregistrostp(); break; // Cantidad de Tipos de productos registrados
             case 0: break;
             default: cout << "Opcion invalida.\n"; break;
         }
     } while(opcion != 0);
-}
-void agregarTipoProducto() {
-    ArchivoTipoProducto archivo("tipos.dat");
-    TipoProducto tipo;
-    tipo.cargar();
-
-    if (archivo.Guardar(tipo)) {
-        cout << "Tipo guardado correctamente!" << endl;
-    } else {
-        cout << "Error al guardar!" << endl;
-    }
-}
-void listarTipoProductos() {
-    ArchivoTipoProducto archivo("tipos.dat");
-    int cantidad = archivo.CantidadRegistros();
-
-    if (cantidad == 0) {
-        cout << "No hay tipos cargados." << endl;
-        return;
-    }
-
-    TipoProducto* tipos = new TipoProducto[cantidad];
-    archivo.Leer(cantidad, tipos);
-
-    for (int i = 0; i < cantidad; i++) {
-        cout << "\n--- Registro " << i+1 << " ---" << endl;
-        tipos[i].mostrar();
-    }
-
-    delete[] tipos;
-}
-void Buscarporidtp(){
-
-    ArchivoTipoProducto archivo("tipos.dat");
-    int id;
-        cout << "ID a buscar: ";
-        cin >> id;
-
-        int pos = archivo.Buscar(id);
-        if(pos != -1) {
-            TipoProducto tipo = archivo.Leer(pos);
-            cout << "Encontrado en posicion " << pos << ":" << endl;
-            tipo.mostrar();
-        } else{
-            cout << "No encontrado!" << endl;
-                }
-
-}
-void Cantidadregistrostp(){
-
-    ArchivoTipoProducto archivo("tipos.dat");
-    cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
 }
 
 //FINALIZA MENU TIPO DE PRODUCTOS
