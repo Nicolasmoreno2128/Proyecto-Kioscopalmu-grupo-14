@@ -81,32 +81,15 @@ void proveedor::setdireccion(const char* _direccion) {
 void proveedor::cargar() {
     // DNI
     do {
-    cout << "DNI (8 digitos numericos): ";
-    cin >> Dni;
-    if (cin.fail() || Dni < 10000000 || Dni > 99999999) {
-        cout << "DNI invalido. Debe contener exactamente 8 digitos numericos.\n";
-        cin.clear();
-        cin.ignore(1000, '\n');
-    } else break;
-        } while (true);
-
-    // CUIT (11 dígitos numéricos)
-    /*do {
-        cout << "CUIT (11 digitos): ";
-        cargarCadena(Cuit, 49);
-        int len = strlen(Cuit);
-        bool valido = true;
-        for (int i = 0; i < len; i++) {
-            if (!isdigit(Cuit[i])) {
-                valido = false;
-                break;
-            }
-        }
-        if (len != 11 || !valido) {
-            cout << "CUIT invalido. Debe contener exactamente 11 digitos numericos.\n";
+        cout << "DNI (8 digitos numericos): ";
+        cin >> Dni;
+        if (cin.fail() || Dni < 10000000 || Dni > 99999999) {
+            cout << "DNI invalido. Debe contener exactamente 8 digitos numericos.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
         } else break;
     } while (true);
-*/
+
     // Teléfono
     do {
         cout << "TELEFONO (entero positivo): ";
