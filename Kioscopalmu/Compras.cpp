@@ -80,18 +80,73 @@ void Compras::setImporte(float _importe) {
 
 // Método para cargar datos
 void Compras::cargar() {
-    cout << "ID COMPRA: ";
-    cin >> idCompra;
-    cout << "NUMERO DE PRODUCTO: ";
-    cin >> nroProducto;
-    cout << "CUIT PROVEEDOR: ";
-    cargarCadena(CUITproveedor, 49);
+    // ID de compra
+    do {
+        cout << "ID COMPRA (entero positivo): ";
+        cin >> idCompra;
+        if (cin.fail() || idCompra <= 0) {
+            cout << "ID inválido. Intente nuevamente.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while (true);
+
+    // Número de producto
+    do {
+        cout << "NUMERO DE PRODUCTO (entero positivo): ";
+        cin >> nroProducto;
+        if (cin.fail() || nroProducto <= 0) {
+            cout << "Número inválido. Intente nuevamente.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while (true);
+
+    // CUIT proveedor (11 dígitos numéricos)
+    do {
+        cout << "CUIT PROVEEDOR (11 dígitos numéricos): ";
+        cargarCadena(CUITproveedor, 49);
+
+        int longitud = strlen(CUITproveedor);
+        bool esNumerico = true;
+
+        for (int i = 0; i < longitud; i++) {
+            if (!isdigit(CUITproveedor[i])) {
+                esNumerico = false;
+                break;
+            }
+        }
+
+        if (longitud != 11 || !esNumerico) {
+            cout << "CUIT inválido. Debe contener exactamente 11 dígitos numéricos.\n";
+        } else break;
+    } while (true);
+
+    // Fecha de compra
     cout << "FECHA DE COMPRA:" << endl;
-    fecha.Cargar();
-    cout << "CANTIDAD: ";
-    cin >> cantidad;
-    cout << "IMPORTE: ";
-    cin >> importe;
+    fecha.Cargar();  // Se validará dentro de esa función
+
+    // Cantidad
+    do {
+        cout << "CANTIDAD (entero positivo): ";
+        cin >> cantidad;
+        if (cin.fail() || cantidad <= 0) {
+            cout << "Cantidad inválida. Ingrese un valor mayor a cero.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while (true);
+
+    // Importe
+    do {
+        cout << "IMPORTE ($ mayor a 0): ";
+        cin >> importe;
+        if (cin.fail() || importe <= 0) {
+            cout << "Importe inválido. Ingrese un valor mayor a cero.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
+    } while (true);
 }
 
 // Método para mostrar datos
