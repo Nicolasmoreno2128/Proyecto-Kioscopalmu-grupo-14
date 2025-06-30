@@ -85,7 +85,7 @@ void Compras::cargar() {
         cout << "ID COMPRA (entero positivo): ";
         cin >> idCompra;
         if (cin.fail() || idCompra <= 0) {
-            cout << "ID inválido. Intente nuevamente.\n";
+            cout << "ID invalido. Intente nuevamente.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -96,7 +96,7 @@ void Compras::cargar() {
         cout << "NUMERO DE PRODUCTO (entero positivo): ";
         cin >> nroProducto;
         if (cin.fail() || nroProducto <= 0) {
-            cout << "Número inválido. Intente nuevamente.\n";
+            cout << "Numero invalido. Intente nuevamente.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -104,7 +104,7 @@ void Compras::cargar() {
 
     // CUIT proveedor (11 dígitos numéricos)
     do {
-        cout << "CUIT PROVEEDOR (11 dígitos numéricos): ";
+        cout << "CUIT PROVEEDOR (11 digitos numericos): ";
         cargarCadena(CUITproveedor, 49);
 
         int longitud = strlen(CUITproveedor);
@@ -118,7 +118,7 @@ void Compras::cargar() {
         }
 
         if (longitud != 11 || !esNumerico) {
-            cout << "CUIT inválido. Debe contener exactamente 11 dígitos numéricos.\n";
+            cout << "CUIT invalido. Debe contener exactamente 11 digitos numericos.\n";
         } else break;
     } while (true);
 
@@ -131,7 +131,7 @@ void Compras::cargar() {
         cout << "CANTIDAD (entero positivo): ";
         cin >> cantidad;
         if (cin.fail() || cantidad <= 0) {
-            cout << "Cantidad inválida. Ingrese un valor mayor a cero.\n";
+            cout << "Cantidad invalida. Ingrese un valor mayor a cero.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -142,7 +142,7 @@ void Compras::cargar() {
         cout << "IMPORTE ($ mayor a 0): ";
         cin >> importe;
         if (cin.fail() || importe <= 0) {
-            cout << "Importe inválido. Ingrese un valor mayor a cero.\n";
+            cout << "Importe invalido. Ingrese un valor mayor a cero.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;

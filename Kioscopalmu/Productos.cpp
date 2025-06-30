@@ -74,7 +74,7 @@ void Productos::cargar() {
         cout << "NUMERO DE PRODUCTO (entero positivo): ";
         cin >> nroProducto;
         if(cin.fail() || nroProducto <= 0) {
-            cout << "Valor inválido. Intente nuevamente.\n";
+            cout << "Valor invalido. Intente nuevamente.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -85,7 +85,7 @@ void Productos::cargar() {
         cout << "NOMBRE: ";
         cargarCadena(nombre, 49);
         if(strlen(nombre) == 0) {
-            cout << "El nombre no puede estar vacío.\n";
+            cout << "El nombre no puede estar vacio.\n";
         } else break;
     } while(true);
 
@@ -94,7 +94,7 @@ void Productos::cargar() {
         cout << "ID TIPO PRODUCTO (entero positivo): ";
         cin >> idTipoProducto;
         if(cin.fail() || idTipoProducto <= 0) {
-            cout << "Valor inválido. Intente nuevamente.\n";
+            cout << "Valor invalido. Intente nuevamente.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -105,7 +105,7 @@ void Productos::cargar() {
         cout << "PRECIO (mayor a 0): ";
         cin >> precio;
         if(cin.fail() || precio <= 0) {
-            cout << "Precio inválido. Ingrese un número mayor a 0.\n";
+            cout << "Precio invalido. Ingrese un numero mayor a 0.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -116,7 +116,7 @@ void Productos::cargar() {
         cout << "STOCK (entero positivo): ";
         cin >> stock;
         if(cin.fail() || stock < 0) {
-            cout << "Stock inválido. Ingrese un valor igual o mayor a 0.\n";
+            cout << "Stock invalido. Ingrese un valor igual o mayor a 0.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;

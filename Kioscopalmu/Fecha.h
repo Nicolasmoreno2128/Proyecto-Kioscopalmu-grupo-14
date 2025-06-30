@@ -21,7 +21,7 @@ public:
         cout << "DIA (1-31): ";
         cin >> dia;
         if (cin.fail() || dia < 1 || dia > 31) {
-            cout << "Día inválido. Ingrese un número entre 1 y 31.\n";
+            cout << "Dia invalido. Ingrese un numero entre 1 y 31.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -32,7 +32,7 @@ public:
         cout << "MES (1-12): ";
         cin >> mes;
         if (cin.fail() || mes < 1 || mes > 12) {
-            cout << "Mes inválido. Ingrese un número entre 1 y 12.\n";
+            cout << "Mes invalido. Ingrese un numero entre 1 y 12.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;
@@ -40,10 +40,10 @@ public:
 
     // Año
     do {
-        cout << "AÑO (2000-2100): ";
+        cout << "ANIO (2000-2100): ";
         cin >> anio;
         if (cin.fail() || anio < 2000 || anio > 2100) {
-            cout << "Año inválido. Ingrese un número entre 2000 y 2100.\n";
+            cout << "Año invalido. Ingrese un numero entre 2000 y 2100.\n";
             cin.clear();
             cin.ignore(1000, '\n');
         } else break;

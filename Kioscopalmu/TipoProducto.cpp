@@ -45,7 +45,7 @@ void TipoProducto::cargar() {
         cin >> idTipoProducto;
 
         if(cin.fail() || idTipoProducto <= 0) {
-            cout << "Valor inválido. Ingrese un número entero positivo.\n";
+            cout << "Valor invalido. Ingrese un numero entero positivo.\n";
             cin.clear(); // Limpia el error
             cin.ignore(1000, '\n'); // Descarta la entrada inválida
         } else {
@@ -59,7 +59,7 @@ void TipoProducto::cargar() {
         cargarCadena(nombre, 49);
 
         if(strlen(nombre) == 0) {
-            cout << "El nombre no puede estar vacío. Intente nuevamente.\n";
+            cout << "El nombre no puede estar vacio. Intente nuevamente.\n";
         } else {
             break;
         }
