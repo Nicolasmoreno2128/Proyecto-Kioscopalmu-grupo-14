@@ -72,7 +72,7 @@
 1751242913 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\fecha.h
 	<iostream>
 
-1751237558 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.h
+1751249377 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.h
 	<cstring>
 
 1751238601 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.h
@@ -397,7 +397,7 @@
 	"Productos.h"
 	"ArchivoProductos.h"
 
-1751242913 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
+1751249377 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>

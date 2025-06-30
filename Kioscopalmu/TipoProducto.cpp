@@ -76,7 +76,29 @@ void TipoProducto::mostrar() {
 void agregarTipoProducto() {
     ArchivoTipoProducto archivo("tipos.dat");
     TipoProducto tipo;
-    tipo.cargar();
+
+    int id;
+    do {
+        cout << "ID del tipo de producto: ";
+        cin >> id;
+
+        if (cin.fail() || id <= 0) {
+            cout << "ID inválido. Debe ser un número entero positivo.\n";
+            cin.clear(); cin.ignore(1000, '\n');
+            continue;
+        }
+
+        if (archivo.Buscar(id) != -1) {
+            cout << "Ya existe un tipo de producto con ese ID. Ingrese otro.\n";
+            continue;
+        }
+
+        tipo.setIdTipoProducto(id);
+        break;
+
+    } while (true);
+
+    tipo.cargarDatosComplementarios();
 
     if (archivo.Guardar(tipo)) {
         cout << "Tipo guardado correctamente!" << endl;
@@ -124,4 +146,15 @@ void Cantidadregistrostp(){
 
     ArchivoTipoProducto archivo("tipos.dat");
     cout << "Cantidad de registros: " << archivo.CantidadRegistros() << endl;
+}
+
+
+void TipoProducto::cargarDatosComplementarios() {
+    do {
+        cout << "Nombre del tipo de producto: ";
+        cargarCadena(nombre, 49);
+        if (strlen(nombre) == 0) {
+            cout << "El nombre no puede estar vacío.\n";
+        } else break;
+    } while (true);
 }
