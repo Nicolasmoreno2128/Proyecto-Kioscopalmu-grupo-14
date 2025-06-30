@@ -91,7 +91,7 @@ void proveedor::cargar() {
         } while (true);
 
     // CUIT (11 dígitos numéricos)
-    do {
+    /*do {
         cout << "CUIT (11 digitos): ";
         cargarCadena(Cuit, 49);
         int len = strlen(Cuit);
@@ -106,7 +106,7 @@ void proveedor::cargar() {
             cout << "CUIT invalido. Debe contener exactamente 11 digitos numericos.\n";
         } else break;
     } while (true);
-
+*/
     // Teléfono
     do {
         cout << "TELEFONO (entero positivo): ";
@@ -156,15 +156,51 @@ void proveedor::mostrar() {
 }
 // Metodos del menu
 void altaProveedor() {
-    ArchivoProveedor archivo("proveedores.dat");
+
+ ///Prueba inicio
+
+ ArchivoProveedor archivo("proveedores.dat");
+
     proveedor prov;
+
+    // VALIDACIÓN DE CUIT (exactamente 11 dígitos numéricos)
+    char cuitTemp[50];
+    do {
+        cout << "CUIT (11 digitos): ";
+        cargarCadena(cuitTemp, 49);
+
+        int len = strlen(cuitTemp);
+        bool valido = true;
+        for (int i = 0; i < len; i++) {
+            if (!isdigit(cuitTemp[i])) {
+                valido = false;
+                break;
+            }
+        }
+
+        if (len != 11 || !valido) {
+            cout << "CUIT invalido. Debe contener exactamente 11 digitos numericos.\n";
+        } else break;
+    } while (true);
+
+    // VERIFICACIÓN DE CUIT DUPLICADO
+    if (archivo.BuscarPorCuit(cuitTemp) != -1) {
+        cout << "Error: ya existe un proveedor con ese CUIT registrado.\n";
+        return;
+    }
+
+    // Guardamos el CUIT directamente al objeto antes de cargar
+    prov.setCuit(cuitTemp);
+
+    // LLAMAMOS A cargar() PARA COMPLETAR DATOS
     prov.cargar();
 
-        if(archivo.Guardar(prov)) {
-            cout << "Proveedor guardado correctamente!" << endl;
-        } else {
-                cout << "Error al guardar!" << endl;
-                }
+    // GUARDAMOS EN ARCHIVO
+    if (archivo.Guardar(prov)) {
+        cout << "Proveedor guardado correctamente!" << endl;
+    } else {
+        cout << "Error al guardar!" << endl;
+    }
 }
 void listarProveedores() {
     ArchivoProveedor archivo("proveedores.dat");
