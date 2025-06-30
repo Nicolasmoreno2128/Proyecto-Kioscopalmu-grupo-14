@@ -380,7 +380,7 @@
 1751234819 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\backup.cpp
 	"backup.h"
 
-1751242188 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.cpp
+1751242913 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\compras.cpp
 	<iostream>
 	<cstdlib>
 	"FuncionesGlobales.h"
@@ -389,7 +389,7 @@
 	"Fecha.h"
 	"ArchivoCompras.h"
 
-1751241094 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
+1751242913 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
@@ -397,7 +397,7 @@
 	"Productos.h"
 	"ArchivoProductos.h"
 
-1751241013 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
+1751242913 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\tipoproducto.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>

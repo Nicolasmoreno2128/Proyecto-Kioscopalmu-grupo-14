@@ -79,20 +79,70 @@ void proveedor::setdireccion(const char* _direccion) {
 
 // Método para cargar datos
 void proveedor::cargar() {
-    cout << "DNI: ";
+    // DNI
+    do {
+    cout << "DNI (8 digitos numericos): ";
     cin >> Dni;
-    cin.ignore();
-    cout << "CUIT: ";
-    cargarCadena(Cuit, 49);
-    cout << "TELEFONO: ";
-    cin >> telefono;
-    cin.ignore();
-    cout << "NOMBRE: ";
-    cargarCadena(nombre, 49);
-    cout << "EMAIL: ";
-    cargarCadena(email, 49);
-    cout << "DIRECCION: ";
-    cargarCadena(direccion, 99);
+    if (cin.fail() || Dni < 10000000 || Dni > 99999999) {
+        cout << "DNI invalido. Debe contener exactamente 8 digitos numericos.\n";
+        cin.clear();
+        cin.ignore(1000, '\n');
+    } else break;
+        } while (true);
+
+    // CUIT (11 dígitos numéricos)
+    do {
+        cout << "CUIT (11 digitos): ";
+        cargarCadena(Cuit, 49);
+        int len = strlen(Cuit);
+        bool valido = true;
+        for (int i = 0; i < len; i++) {
+            if (!isdigit(Cuit[i])) {
+                valido = false;
+                break;
+            }
+        }
+        if (len != 11 || !valido) {
+            cout << "CUIT invalido. Debe contener exactamente 11 digitos numericos.\n";
+        } else break;
+    } while (true);
+
+    // Teléfono
+    do {
+        cout << "TELEFONO (entero positivo): ";
+        cin >> telefono;
+        if (cin.fail() || telefono <= 0) {
+            cout << "Telefono invalido.\n";
+            cin.clear(); cin.ignore(1000, '\n');
+        } else break;
+    } while (true);
+
+    // Nombre
+    do {
+        cout << "NOMBRE: ";
+        cargarCadena(nombre, 49);
+        if (strlen(nombre) == 0) {
+            cout << "El nombre no puede estar vacio.\n";
+        } else break;
+    } while (true);
+
+    // Email
+    do {
+        cout << "EMAIL: ";
+        cargarCadena(email, 49);
+        if (strlen(email) == 0) {
+            cout << "El email no puede estar vacio.\n";
+        } else break;
+    } while (true);
+
+    // Dirección
+    do {
+        cout << "DIRECCION: ";
+        cargarCadena(direccion, 99);
+        if (strlen(direccion) == 0) {
+            cout << "La direccion no puede estar vacia.\n";
+        } else break;
+    } while (true);
 }
 
 // Método para mostrar datos
