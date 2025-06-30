@@ -147,7 +147,7 @@
 	<cstdio>
 	"FuncionesGlobales.h"
 
-1751243303 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.cpp
+1751245535 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\proveedor.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
@@ -389,7 +389,7 @@
 	"Fecha.h"
 	"ArchivoCompras.h"
 
-1751242913 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
+1751245870 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\productos.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>

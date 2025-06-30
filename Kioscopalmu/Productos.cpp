@@ -70,15 +70,6 @@ void Productos::setStock(int _stock) {
 // Método para cargar datos
 void Productos::cargar() {
 // Validar número de producto
-    do {
-        cout << "NUMERO DE PRODUCTO (entero positivo): ";
-        cin >> nroProducto;
-        if(cin.fail() || nroProducto <= 0) {
-            cout << "Valor invalido. Intente nuevamente.\n";
-            cin.clear();
-            cin.ignore(1000, '\n');
-        } else break;
-    } while(true);
 
     // Validar nombre no vacío
     do {
@@ -135,17 +126,29 @@ void Productos::mostrar() {
 // Metodos del menu
 
 void altaProducto() {
-
     ArchivoProductos archivo("productos.dat");
+
+    int nro;
+    cout << "Ingrese numero de producto: ";
+    cin >> nro;
+
+    // VALIDACIÓN: ¿ya existe?
+    if (archivo.Buscar(nro) != -1) {
+        cout << "Error: ya existe un producto con ese numero.\n";
+        return;
+    }
+
+    // SI ES NUEVO: creamos y seteamos número
     Productos prod;
-    prod.cargar();
+    prod.setNroProducto(nro);  // asegurate de tener este setter
 
-        if(archivo.Guardar(prod)) {
-                cout << "Producto guardado correctamente!" << endl;
-                } else {
-                cout << "Error al guardar!" << endl;
-                }
+    prod.cargar();  // cargar el resto de los datos
 
+    if (archivo.Guardar(prod)) {
+        cout << "Producto guardado correctamente!" << endl;
+    } else {
+        cout << "Error al guardar!" << endl;
+    }
                     }
 void listarProductos() {
 
