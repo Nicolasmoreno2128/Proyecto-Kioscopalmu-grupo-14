@@ -11,6 +11,7 @@
 #include "ArchivoCompras.h"
 #include "exportarCSV.h"
 #include "backup.h"
+#include "rlutil.h"
 
 using namespace std;
 
@@ -21,7 +22,7 @@ using namespace std;
 void mostrarMenuPrincipal() {
     int opcion;
     do {
-
+        rlutil::cls(); //herramienta para limpiar la pantalla cuando aparece el menu principal
         cout << "=== SISTEMA DE GESTION KIOSCOPALMU ===" << endl;
 
         cout << "\n===== MENU PRINCIPAL =====" << endl;
@@ -109,6 +110,7 @@ int opcion;
 void menuProveedor() {
 int opcion;
     do {
+
         cout << "\n--- MENU DE PROVEEDOR ---" << endl;
         cout << "1. Agregar Proveedor" << endl;
         cout << "2. Listar todos los proveedores" << endl;
@@ -144,6 +146,7 @@ cout << "\n=== MENU COMPRAS ===" << endl;
 
     int opcion;
     do {
+
         cout << "1. Agregar compra" << endl;
         cout << "2. Listar todas" << endl;
         cout << "3. Buscar por ID compra" << endl;
@@ -176,6 +179,7 @@ void menuExportaciones() {
 
     int opcion;
     do {
+
         cout << "\n=== MENU EXPORTACIONES ===" << endl;
         cout << "1. Exportar Compras a CSV" << endl;
         cout << "2. Exportar Proveedores a CSV" << endl;
@@ -229,6 +233,8 @@ void menuExportaciones() {
 void menuBackup(){
     int opcion;
     do {
+
+
         cout << "\n=== MENU BACKUP Y RESTAURACION ===" << endl;
         cout << "1. Backup de Compras" << endl;
         cout << "2. Backup de Productos" << endl;

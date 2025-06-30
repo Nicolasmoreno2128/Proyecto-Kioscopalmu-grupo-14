@@ -155,7 +155,7 @@
 	"proveedor.h"
 	"ArchivoProveedor.h"
 
-1751238778 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
+1751253551 source:c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.cpp
 	<iostream>
 	"Menu.h"
 	"ArchivoTipoProducto.h"
@@ -169,6 +169,7 @@
 	"ArchivoCompras.h"
 	"exportarCSV.h"
 	"backup.h"
+	"rlutil.h"
 
 1751238778 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\menu.h
 
@@ -404,4 +405,18 @@
 	"FuncionesGlobales.h"
 	"TipoProducto.h"
 	"ArchivoTipoProducto.h"
+
+1751253433 c:\users\nico\documents\github\proyecto-kioscopalmu-grupo-14\kioscopalmu\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
 
